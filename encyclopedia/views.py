@@ -122,4 +122,4 @@ def randompage(request):
 
 class NewEntryForm(forms.Form):
     title = forms.CharField(label="Title")
-    content = forms.CharField(widget=forms.Textarea)
+    content = forms.CharField(label="Content", widget=forms.Textarea, )

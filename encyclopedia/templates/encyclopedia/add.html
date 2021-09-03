@@ -5,11 +5,19 @@
 {% endblock %}
 
 {% block body %}
+
     <h1>Add New Page</h1>
     <form method="post" action="{% url 'add' %}">
         {% csrf_token %}
+        <div style="display:flex; flex-direction:column; margin: 50px; align-items: baseline">
         {{ form }}
-        <input type="submit">
+        <br />
+        <input type="submit" value="Save" style="display:block"> 
+    </div>
+        
     </form>
+
+
+   
 
 {% endblock %}
