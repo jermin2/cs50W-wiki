@@ -5,8 +5,10 @@
 {% endblock %}
 
 {% block body %}
-    {{ contents | safe}}
+<h1>Error {{ error_num }}</h1>
 
-    <a href="{{ request.path }}/edit">Edit</a>
+<p>
+    {{ message }}
+</p>
 
 {% endblock %}
